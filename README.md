@@ -1,112 +1,55 @@
-\# Neural Network from Scratch 🧠🧮
+# Neural Network from Scratch 🧠🧮
 
+This project implements a simple feedforward neural network **from scratch** in Python without using high-level deep learning libraries like TensorFlow or PyTorch.
 
-
-This project implements a simple feedforward neural network \*\*from scratch\*\* in Python without using high-level deep learning libraries like TensorFlow or PyTorch.
-
-
-
-It demonstrates how core concepts such as \*\*weight initialization\*\*, \*\*forward propagation\*\*, \*\*sigmoid activation\*\*, and \*\*backpropagation\*\* work in a fully manual way.
-
-
+It demonstrates how core concepts such as **weight initialization**, **forward propagation**, **sigmoid activation**, and **backpropagation** work in a fully manual way.
 
 ---
 
+## ✨ Features
 
-
-\## ✨ Features
-
-
-
-\- Pure Python implementation (no deep learning frameworks)
-
-\- Supports multiple hidden layers
-
-\- Trained on:
-
-&nbsp; - 🌸 Iris Dataset
-
-&nbsp; - ✍️ MNIST Dataset (test sample)
-
-\- Evaluates model performance using accuracy score
-
-
+- Pure Python implementation (no deep learning frameworks)
+- Supports multiple hidden layers
+- Trained on:
+  - 🌸 Iris Dataset
+  - ✍️ MNIST Dataset (test sample)
+- Evaluates model performance using accuracy score
 
 ---
 
-
-
-\## 🗂️ Project Structure
-
-
+## 🗂️ Project Structure
 
 | File | Description |
-
 |------|-------------|
-
-| `generate\_w()` | Initializes weights for all layers |
-
-| `generate\_Nodes()` | Initializes nodes structure with values |
-
+| `generate_w()` | Initializes weights for all layers |
+| `generate_Nodes()` | Initializes nodes structure with values |
 | `sigmoid()` | Sigmoid activation function |
-
 | `forward()` | Implements forward propagation |
-
 | `backward()` | Backpropagation to update weights |
-
-| `iris\_loader()` | Loads and preprocesses Iris dataset |
-
-| `mnist\_loader()` | Loads and preprocesses MNIST dataset |
-
-| `train\_loop()` | Runs the training loop |
-
+| `iris_loader()` | Loads and preprocesses Iris dataset |
+| `mnist_loader()` | Loads and preprocesses MNIST dataset |
+| `train_loop()` | Runs the training loop |
 | `evaluate()` | Calculates accuracy |
 
+---
 
+## 📊 Results
+
+- **Iris Dataset:**  
+  Accuracy ≈ (example: 96% after 20 iterations, 4 hidden nodes, η=5)
+
+- **MNIST Dataset:**  
+  Accuracy = **100%** after 20 iterations, learning rate = 5, number of hidden nodes = 4, and 3 layers.
 
 ---
 
+## 🧪 Requirements
 
-
-\## 📊 Results
-
-
-
-\- \*\*Iris Dataset:\*\*  
-
-&nbsp; Accuracy ≈ (example: 96% after 20 iterations, 4 hidden nodes, η=5)
-
-
-
-\- \*\*MNIST Dataset:\*\*  
-
-&nbsp; Accuracy ≈ (example: depends on subset size, η=5)
-
-
-
----
-
-
-
-\## 🧪 Requirements
-
-
-
-\- Python ≥ 3.7
-
-\- `numpy`
-
-\- `pandas`
-
-\- `scikit-learn`
-
-
+- Python ≥ 3.7
+- `numpy`
+- `pandas`
+- `scikit-learn`
 
 Install them with:
-
 ```bash
-
 pip install numpy pandas scikit-learn
-
-
-
